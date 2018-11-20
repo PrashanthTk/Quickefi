@@ -170,7 +170,7 @@ public class ECartHomeActivity extends AppCompatActivity {
 
                                 return true;
 
-                            case R.id.my_cart:
+                            /*case R.id.my_cart:
 
                                 mDrawerLayout.closeDrawers();
 
@@ -178,13 +178,20 @@ public class ECartHomeActivity extends AppCompatActivity {
                                         Utils.SHOPPING_LIST_TAG,
                                         ECartHomeActivity.this,
                                         AnimationType.SLIDE_LEFT);
-                                return true;
+                                return true;*/
 
-                            case R.id.apriori_result:
+
+                            /*case R.id.apriori_result:
 
                                 mDrawerLayout.closeDrawers();
 
                                 startActivity(new Intent(ECartHomeActivity.this, APrioriResultActivity.class));
+
+                                return true;*/
+                            case R.id.my_orders:
+
+                                mDrawerLayout.closeDrawers();
+                                startActivity(new Intent(ECartHomeActivity.this, TkOrdersActivity.class));
 
                                 return true;
 
