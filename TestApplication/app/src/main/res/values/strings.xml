@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="title_search">Search</string>
+    <string name="title_rental">Rentals</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtLooking">Loking For?</string>
+    <string name="txtRecommended">Recommended For You</string>
+    <string name="txtPopular">Popular Items</string>
+    <string name="txtOn">Torronto, ON</string>
+    <string name="txtDate">Dates</string>
+    <string name="title_picture">Picture</string>
+</resources>

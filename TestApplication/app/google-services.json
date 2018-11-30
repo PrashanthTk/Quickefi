@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1020314509781",
+    "firebase_url": "https://steady-voltage-637.firebaseio.com",
+    "project_id": "steady-voltage-637",
+    "storage_bucket": "steady-voltage-637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020314509781:android:e4a01893fb5ae134",
+        "android_client_info": {
+          "package_name": "com.quickefi.retailapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020314509781-g1760t8b4f120uspik0u8vkh9o7asrea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Ie-1Yyps0Nq2AP6i_29u9MHfW4-AD7g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
