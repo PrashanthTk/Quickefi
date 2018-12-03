@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent paymentConfig = new Intent(this, PaymentActivity.class);
         paymentConfig.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
-        paymentConfig.putExtra(PaymentActivity.EXTRA_PAYMENT, payment);
+        //paymentConfig.putExtra(PaymentActivity.EXTRA_PAYMENT, payment);
         startActivityForResult(paymentConfig, 0);
     }
 

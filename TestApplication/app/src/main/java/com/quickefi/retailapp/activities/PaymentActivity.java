@@ -89,8 +89,8 @@ public class PaymentActivity extends AppCompatActivity implements LoaderCallback
             }
         });
 
-        //final Button button = (Button) findViewById(R.id.paypal_button);
-        Button button =new Button();
+        final Button button = (Button) findViewById(R.id.paypal_button);
+        //Button button =new Button();
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {

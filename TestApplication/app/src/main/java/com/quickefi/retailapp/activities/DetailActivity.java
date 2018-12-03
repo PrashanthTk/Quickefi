@@ -26,7 +26,7 @@ public class DetailActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        Button row_item_order_acceptOrder = (Button) findViewById(R.id.)
         Button RentNow = (Button) findViewById(R.id.acceptOrder);
         RentNow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +48,7 @@ public class DetailActivity extends AppCompatActivity {
                         //newOrder.setPickupaddress();
                         System.out.println(v.getId());
                         break;
+
                 }
 
             }

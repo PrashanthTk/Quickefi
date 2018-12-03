@@ -205,7 +205,7 @@ public class User {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (street != null ? street.hashCode() : 0);
         result = 31 * result + (city != null ? city.hashCode() : 0);
-        result = 31 * result + (houseNumber != null ? houseNumber.hashCode() : 0);
+        //result = 31 * result + (houseNumber != null ? houseNumber.hashCode() : 0);
         result = 31 * result + (zip != null ? zip.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (phone != null ? phone.hashCode() : 0);
@@ -223,7 +223,7 @@ public class User {
                 ", name='" + name + '\'' +
                 ", street='" + street + '\'' +
                 ", city='" + city + '\'' +
-                ", houseNumber='" + houseNumber + '\'' +
+                //", houseNumber='" + houseNumber + '\'' +
                 ", zip='" + zip + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
