@@ -1,5 +1,6 @@
 package com.quickefi.retailapp.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,14 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.quickefi.retailapp.activities.DetailActivity;
 import com.quickefi.retailapp.listener.OnClickListener;
 
 import com.quickefi.retailapp.R;
 import com.quickefi.retailapp.adapter.AdapterOrders;
-import com.quickefi.retailapp.adapter.AdapterPopular;
-import com.quickefi.retailapp.model.ItemData;
 import com.quickefi.retailapp.model.Order;
 
 import java.util.ArrayList;
@@ -28,6 +28,7 @@ public class InboxFragment extends Fragment implements OnClickListener{
     AdapterOrders adapterforOrders;
     private RecyclerView recyclerViewforOrders;
     private List<Order> list = new ArrayList<>();
+    private Context mContext;
     public InboxFragment() {
 
     }
@@ -35,20 +36,21 @@ public class InboxFragment extends Fragment implements OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =inflater.inflate(R.layout.fragment_inbox, container, false);
+        View view =inflater.inflate(R.layout.fragment_inbox_final, container, false);
 
         recyclerViewforOrders = view.findViewById(R.id.recyclerViewforOrders);
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             Order temporder = new Order();
             temporder.setName("Order"+i);
             list.add(temporder);
         }
-        Button b = (Button) view.findViewById(R.id.acceptOrder);
+
+        /*Button b = (Button) view.findViewById(R.id.acceptrentalrequest);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.acceptOrder:
+                    case R.id.acceptrentalrequest:
                     //Create Order object
                         //Assign Order fields
                             //Push Order to heroku
@@ -67,7 +69,7 @@ public class InboxFragment extends Fragment implements OnClickListener{
                 }
 
             }
-        });
+        });*/
         adapterforOrders = new AdapterOrders(list,this);
         recyclerViewforOrders.setLayoutManager(new GridLayoutManager(getContext(), 2));
         recyclerViewforOrders.setItemAnimator(new DefaultItemAnimator());
@@ -77,7 +79,12 @@ public class InboxFragment extends Fragment implements OnClickListener{
     }
     @Override
     public void onClick() {
-        startActivity(new Intent(getContext(),DetailActivity.class));
+        RecyclerView mRecyclerView;
+        mContext=getActivity().getApplicationContext();
+
+        String tempstr = "Time pass string for t esting purposes";
+        Toast.makeText(mContext, tempstr, Toast.LENGTH_LONG).show();
+        //startActivity(new Intent(getContext(),DetailActivity.class));
     }
 
 }

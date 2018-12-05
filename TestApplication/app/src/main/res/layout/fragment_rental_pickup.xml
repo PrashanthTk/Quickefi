@@ -179,14 +179,14 @@
                 app:srcCompat="@drawable/map" />
 
             <Button
-                android:id="@+id/acceptOrder"
+                android:id="@+id/receivedproductbutton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/btn_bg"
-                android:paddingStart="4dp"
                 android:paddingEnd="4dp"
+                android:paddingStart="4dp"
                 android:text="Received Product"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"

@@ -26,13 +26,13 @@ public class DetailActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Button row_item_order_acceptOrder = (Button) findViewById(R.id.)
-        Button RentNow = (Button) findViewById(R.id.acceptOrder);
+
+        Button RentNow = (Button) findViewById(R.id.rentnowbutton);
         RentNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId()) {
-                    case R.id.acceptOrder:
+                    case R.id.rentnowbutton:
                         //Create Order object
                         //Assign Order fields
                         //Push Order to heroku

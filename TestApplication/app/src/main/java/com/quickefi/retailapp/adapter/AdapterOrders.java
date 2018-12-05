@@ -1,5 +1,6 @@
 package com.quickefi.retailapp.adapter;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.quickefi.retailapp.R;
 import com.quickefi.retailapp.listener.OnClickListener;
@@ -16,12 +18,15 @@ import com.quickefi.retailapp.model.Order;
 import java.util.List;
 
 public class AdapterOrders extends RecyclerView.Adapter<AdapterOrders.ViewHolder> {
-
+    private Context mContext;
     private List<Order> list;
     OnClickListener onClickListener;
+
+    private RecyclerView mrecyclerView;
     public AdapterOrders(List<Order> list, OnClickListener onClickListener) {
         this.list = list;
         this.onClickListener = onClickListener;
+
     }
 
     @NonNull
@@ -29,6 +34,7 @@ public class AdapterOrders extends RecyclerView.Adapter<AdapterOrders.ViewHolder
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.row_item_order, viewGroup, false);
+
         return new ViewHolder(itemView);
     }
 
@@ -75,8 +81,10 @@ public class AdapterOrders extends RecyclerView.Adapter<AdapterOrders.ViewHolder
                 @Override
                 public void onClick(View v) {
                     onClickListener.onClick();
+
                 }
             });
+
         }
     }
 }
