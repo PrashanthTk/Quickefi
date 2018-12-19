@@ -48,7 +48,7 @@ public class Rental_PickupFragment extends Fragment implements OnClickListener {
     }
 
     @Override
-    public void onClick() {
+    public void onClick(View v) {
 
     }
 }

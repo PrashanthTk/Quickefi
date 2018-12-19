@@ -12,9 +12,10 @@ import android.widget.TextView;
 
 import com.quickefi.retailapp.R;
 import com.quickefi.retailapp.model.Order;
+import com.quickefi.retailapp.model.Session;
 
 public class DetailActivity extends AppCompatActivity {
-
+    private Session session;//global variable
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

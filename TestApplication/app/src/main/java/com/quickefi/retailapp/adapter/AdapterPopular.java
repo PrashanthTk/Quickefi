@@ -1,3 +1,4 @@
+
 package com.quickefi.retailapp.adapter;
 
 import android.support.annotation.NonNull;
@@ -50,9 +51,10 @@ public class AdapterPopular extends RecyclerView.Adapter<AdapterPopular.ViewHold
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onClickListener.onClick();
+                    onClickListener.onClick(v);
                 }
             });
         }
     }
 }
+

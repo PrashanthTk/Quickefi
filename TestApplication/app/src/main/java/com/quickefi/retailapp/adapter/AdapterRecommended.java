@@ -1,3 +1,4 @@
+
 package com.quickefi.retailapp.adapter;
 
 import android.content.Context;
@@ -51,9 +52,10 @@ public class AdapterRecommended extends RecyclerView.Adapter<AdapterRecommended.
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onClickListener.onClick();
+                    onClickListener.onClick(v);
                 }
             });
         }
     }
 }
+

@@ -59,7 +59,7 @@ public class SearchFragment extends Fragment implements OnClickListener {
 
 
     @Override
-    public void onClick() {
+    public void onClick(View v) {
         startActivity(new Intent(getContext(),DetailActivity.class));
     }
 }

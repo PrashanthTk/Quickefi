@@ -79,5 +79,9 @@ public class Util {
             }
         }).onSameThread().check();
     }
+    public static void getOrderfromString(String orderstring)
+    {
+        //Split string here
+    }
 
 }

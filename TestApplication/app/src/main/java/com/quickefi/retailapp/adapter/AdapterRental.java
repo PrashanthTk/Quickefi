@@ -50,7 +50,7 @@ public class AdapterRental extends RecyclerView.Adapter<AdapterRental.ViewHolder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onClickListener.onClick();
+                    onClickListener.onClick(v);
                 }
             });
         }

@@ -21,6 +21,7 @@ import com.quickefi.retailapp.fragment.InboxFragment;
 import com.quickefi.retailapp.fragment.Rental_DropoffFragment;
 import com.quickefi.retailapp.fragment.Rental_PickupFragment;
 import com.quickefi.retailapp.fragment.SearchFragment;
+import com.quickefi.retailapp.model.Session;
 import com.quickefi.retailapp.util.AppConfig;
 
 import java.math.BigDecimal;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
             .clientId("Afxj_dBy1SgDJYs7Nttu5hrLUXlw4pZKTem-VA-X5aWDM3Z7Pyzvn5RqZN33Dtsels2nkXx8SzdvS2-R");
 
+    private Session session;//global variable
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -80,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        session = new Session(this.getApplicationContext());
+        session.setusename("USERNAME");
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

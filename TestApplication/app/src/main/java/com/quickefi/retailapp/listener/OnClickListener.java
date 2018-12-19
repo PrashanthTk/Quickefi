@@ -1,5 +1,8 @@
 package com.quickefi.retailapp.listener;
 
-public interface OnClickListener {
-    void onClick();
+
+import android.view.View;
+
+public interface OnClickListener extends View.OnClickListener{
+    void onClick(View whicheverorderwasclicked);
 }
